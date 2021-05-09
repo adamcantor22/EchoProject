@@ -180,8 +180,8 @@
      <Compile Include="Assets\Oculus\Platform\Scripts\UserOptions.cs" />
      <Compile Include="Assets\Oculus\Platform\Scripts\PlatformSettings.cs" />
      <Compile Include="Assets\Oculus\Platform\Scripts\Models\NetSyncVoipAttenuationValue.cs" />
-     <Compile Include="Assets\Oculus\Platform\Samples\NetChat\DataEntry.cs" />
      <Compile Include="Assets\Oculus\Platform\Samples\VrHoops\Scripts\AIPlayer.cs" />
+     <Compile Include="Assets\Oculus\Platform\Samples\NetChat\DataEntry.cs" />
      <Compile Include="Assets\Oculus\Platform\Scripts\Models\LivestreamingStartResult.cs" />
      <Compile Include="Assets\Oculus\Platform\Samples\VrBoardGame\Scripts\GameBoard.cs" />
      <Compile Include="Assets\Oculus\Platform\Scripts\AbuseReportOptions.cs" />
