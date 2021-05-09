@@ -688,47 +688,26 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Sysroot.Linux_x86_64">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.XR.Management.Editor">
         <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Subsystem.Registration">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
         <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
@@ -739,14 +718,26 @@
     <Reference Include="Unity.XR.Oculus.Editor">
         <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.Oculus">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.XR.Oculus.dll</HintPath>
+    <Reference Include="Unity.Subsystem.Registration">
+        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
         <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.SysrootPackage.Editor">
-        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Oculus">
+        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/Unity.XR.Oculus.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>D:/Adam&apos;s Files/Unity/Echo/Echo/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -758,21 +749,21 @@
       <Project>{58663790-b029-5df7-c30b-781fcd0a4ca4}</Project>
       <Name>Oculus.VR.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{d8cefcbc-275c-2746-97fc-948c1c53c681}</Project>
-      <Name>Oculus.VR.Scripts.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{5be6662a-3b8d-8d1a-fd44-19c768af29a2}</Project>
-      <Name>Oculus.Platform</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.Platform.Editor.csproj">
       <Project>{020af231-c5ed-f87f-c463-55b844a6b386}</Project>
       <Name>Oculus.Platform.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
+      <Project>{d8cefcbc-275c-2746-97fc-948c1c53c681}</Project>
+      <Name>Oculus.VR.Scripts.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
       <Project>{44bac585-4db4-8672-b084-ac3a2fa787e3}</Project>
       <Name>Oculus.VR</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Platform.csproj">
+      <Project>{5be6662a-3b8d-8d1a-fd44-19c768af29a2}</Project>
+      <Name>Oculus.Platform</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
