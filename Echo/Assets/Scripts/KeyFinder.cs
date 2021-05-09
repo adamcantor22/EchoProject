@@ -10,7 +10,7 @@ public class KeyFinder : MonoBehaviour
 
     void Start()
     {
-        key = GameObject.FindGameObjectWithTag("key");
+        key = GameObject.FindGameObjectWithTag("Key");
     }
 
     
