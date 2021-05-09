@@ -51,29 +51,21 @@ public class MovementProvider : LocomotionProvider
 
     private void CheckForInput()
     {
-        print("here1");
         foreach(XRController controller in controllers)
         {
-            print(controller);
             if (controller.enableInputActions)
-                print("true");
                 CheckForMovement(controller.inputDevice);
         }
     }
 
     private void CheckForMovement(InputDevice device)
     {
-        print("here2");
         if (device.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 position))
-        {
-            print(position);
             StartMove(position);
-        }
     }
 
     private void StartMove(Vector2 position)
     {
-        print("here3");
         // Apply the touch position to the head's forward Vector
         Vector3 direction = new Vector3(position.x, 0, position.y);
         Vector3 headRotation = new Vector3(0, head.transform.eulerAngles.y, 0);
@@ -84,7 +76,6 @@ public class MovementProvider : LocomotionProvider
         // Apply speed and move
         Vector3 movement = direction * speed;
         characterController.Move(movement * Time.deltaTime);
-        print(movement);
     }
 
     private void ApplyGravity()
