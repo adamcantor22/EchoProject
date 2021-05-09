@@ -22,7 +22,12 @@ public class Echolocate : MonoBehaviour
   
     void Update()
     {
+        if (cooldownTimer > 0f)
+            cooldownTimer -= Time.deltaTime;
+
         CheckForInput();
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+            Ping();
     }
 
     private void CheckForInput()
@@ -43,10 +48,7 @@ public class Echolocate : MonoBehaviour
 
     void Ping()
     {
-        if (cooldownTimer > 0f)
-            cooldownTimer -= Time.deltaTime;
-
-
+        
         if (cooldownTimer <= 0f)
         {
             for (int i = 0; i < trails; i++)
