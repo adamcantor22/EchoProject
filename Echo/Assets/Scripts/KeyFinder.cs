@@ -18,6 +18,7 @@ public class KeyFinder : MonoBehaviour
     {
         if(!hasKey && Vector3.Distance(key.transform.position, transform.position) <= 0.5f) {
             hasKey = true;
+            GetComponent<Echolocate>().PlaySound(2);
             Destroy(key);
         }
     }

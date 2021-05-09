@@ -476,8 +476,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -839858156647592434, guid: b58fd7327ea89df4195d3961bc483a42,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.239
+      objectReference: {fileID: 0}
+    - target: {fileID: -839858156647592434, guid: b58fd7327ea89df4195d3961bc483a42,
+        type: 3}
       propertyPath: MaxDistance
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -839858156647592434, guid: b58fd7327ea89df4195d3961bc483a42,
         type: 3}
@@ -493,6 +498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: rolloffMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -839858156647592434, guid: b58fd7327ea89df4195d3961bc483a42,
+        type: 3}
+      propertyPath: DopplerLevel
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -839858156647592434, guid: b58fd7327ea89df4195d3961bc483a42,
         type: 3}
@@ -823,6 +833,7 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: edb415f3fd581ac4a93e4b0849affbdd, type: 3}
   - {fileID: 8300000, guid: 18667adeff0b96c4c869607bdd18a6ae, type: 3}
+  - {fileID: 8300000, guid: db794029bb04cf5459d7f7bf0084d3ad, type: 3}
   cooldown: 0.5
 --- !u!82 &963194231
 AudioSource:
