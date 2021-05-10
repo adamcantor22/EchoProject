@@ -1475,7 +1475,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XRRig: {fileID: 1321419971}
-<<<<<<< HEAD
 --- !u!1001 &1703016610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1560,7 +1559,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 857def1b4f841124ab3084cc91c09b99, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52c22dceace433d46bbe575e02112856, type: 3}
-=======
 --- !u!1 &1386150486 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8812945405803680397, guid: b58fd7327ea89df4195d3961bc483a42,
@@ -1579,7 +1577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5774466fc8ee44c814aae5669f0e67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> main
 --- !u!1 &1832148796
 GameObject:
   m_ObjectHideFlags: 0
