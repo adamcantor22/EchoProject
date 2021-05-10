@@ -19,7 +19,7 @@ public class Echolocate : MonoBehaviour
         speaker = this.GetComponent<AudioSource>();
         cooldownTimer = cooldown;
     }
-  
+
     void Update()
     {
         if (cooldownTimer > 0f)
@@ -48,14 +48,13 @@ public class Echolocate : MonoBehaviour
 
     void Ping()
     {
-        
+
         if (cooldownTimer <= 0f)
         {
             for (int i = 0; i < trails; i++)
             {
                 GameObject instance = (GameObject)Instantiate(trail, transform.position, Quaternion.Euler(0f, 0f, 0f));
                 instance.GetComponent<ParticleMover>().SetDirection(transform.forward);
-                Debug.Log(transform.forward);
                 cooldownTimer = cooldown;
                 PlaySound(0);
             }

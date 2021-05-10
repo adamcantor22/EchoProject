@@ -514,6 +514,12 @@ PrefabInstance:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2230732193627722189, guid: b58fd7327ea89df4195d3961bc483a42,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -7387706064836869012, guid: 2951d1e95c228544c98e27983a693681,
+        type: 3}
     - target: {fileID: 8144214069233485879, guid: b58fd7327ea89df4195d3961bc483a42,
         type: 3}
       propertyPath: m_RootOrder
@@ -522,17 +528,17 @@ PrefabInstance:
     - target: {fileID: 8144214069233485879, guid: b58fd7327ea89df4195d3961bc483a42,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.86
+      value: 3.066
       objectReference: {fileID: 0}
     - target: {fileID: 8144214069233485879, guid: b58fd7327ea89df4195d3961bc483a42,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.08
+      value: 0.682
       objectReference: {fileID: 0}
     - target: {fileID: 8144214069233485879, guid: b58fd7327ea89df4195d3961bc483a42,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.53
+      value: 5.211
       objectReference: {fileID: 0}
     - target: {fileID: 8144214069233485879, guid: b58fd7327ea89df4195d3961bc483a42,
         type: 3}
@@ -569,6 +575,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
+    - target: {fileID: 8473264159022773575, guid: b58fd7327ea89df4195d3961bc483a42,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 8691780276856062721, guid: 2951d1e95c228544c98e27983a693681,
+        type: 3}
     - target: {fileID: 8812945405803680397, guid: b58fd7327ea89df4195d3961bc483a42,
         type: 3}
       propertyPath: m_Name
@@ -1217,6 +1229,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XRRig: {fileID: 1321419971}
+--- !u!1 &1386150486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8812945405803680397, guid: b58fd7327ea89df4195d3961bc483a42,
+    type: 3}
+  m_PrefabInstance: {fileID: 455153783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1386150489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386150486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5774466fc8ee44c814aae5669f0e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1832148796
 GameObject:
   m_ObjectHideFlags: 0
