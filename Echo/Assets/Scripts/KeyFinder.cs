@@ -29,13 +29,13 @@ public class KeyFinder : MonoBehaviour
             }
         }
 
-        if(!hasKey && Vector3.Distance(key.transform.position, transform.position) <= 0.5f) {
+        if(!hasKey && Vector3.Distance(key.transform.position, transform.position) <= 1.5f) {
             hasKey = true;
             GetComponent<Echolocate>().PlaySound(2);
             Destroy(key);
         }
 
-        if(Vector3.Distance(door.transform.position, transform.position) <= 0.5f) {
+        if(Vector3.Distance(door.transform.position, transform.position) <= 1.5f) {
             if(!hasKey && !keyText.activeInHierarchy) {
                 keyText.SetActive(true);
                 textTimer = textDuration;
