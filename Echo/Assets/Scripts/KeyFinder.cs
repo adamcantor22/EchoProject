@@ -12,6 +12,7 @@ public class KeyFinder : MonoBehaviour
     public GameObject keyText;
     float textDuration = 5f;
     float textTimer = 0f;
+    float maxDistance = 2f;
 
     void Start()
     {
@@ -29,13 +30,13 @@ public class KeyFinder : MonoBehaviour
             }
         }
 
-        if(!hasKey && Vector3.Distance(key.transform.position, transform.position) <= 1.5f) {
+        if(!hasKey && Vector3.Distance(key.transform.position, transform.position) <= maxDistance) {
             hasKey = true;
             GetComponent<Echolocate>().PlaySound(2);
             Destroy(key);
         }
 
-        if(Vector3.Distance(door.transform.position, transform.position) <= 1.5f) {
+        if(Vector3.Distance(door.transform.position, transform.position) <= maxDistance) {
             if(!hasKey && !keyText.activeInHierarchy) {
                 keyText.SetActive(true);
                 textTimer = textDuration;
