@@ -31,13 +31,17 @@ public class KeyFinder : MonoBehaviour
                 keyText.SetActive(false);
             }
         }
+    }
 
+    void CheckForKey() {
         if(!hasKey && Vector3.Distance(key.transform.position, transform.position) <= 1.2f) {
             hasKey = true;
             GetComponent<Echolocate>().PlaySound(2);
             Destroy(key);
         }
+    }
 
+    void CheckForDoor() {
         if(Vector3.Distance(door.transform.position, transform.position) <= 2f) {
             if(!hasKey && !keyText.activeInHierarchy) {
                 keyText.SetActive(true);
@@ -48,7 +52,9 @@ public class KeyFinder : MonoBehaviour
                 door.SetActive(false);
             }
         }
+    }
 
+    void CheckForGoal() {
         if(hasKey && Vector3.Distance(goal.transform.position, transform.position) <= 0.8f) {
             SceneManager.LoadScene(1);
         }
