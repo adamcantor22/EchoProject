@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class KeyFinder : MonoBehaviour
+public class ProgressFinder : MonoBehaviour
 {
     
     GameObject key;
@@ -31,6 +31,10 @@ public class KeyFinder : MonoBehaviour
                 keyText.SetActive(false);
             }
         }
+
+        CheckForKey();
+        CheckForDoor();
+        CheckForGoal();
     }
 
     void CheckForKey() {

@@ -10,14 +10,20 @@ public class Echolocate : MonoBehaviour
     public GameObject trail;
     public int trails = 6;
     public AudioClip[] clips;
+    public bool winScreenActive;
 
     AudioSource speaker;
     public float cooldown;
     float cooldownTimer;
+    WinScreen ws;
 
     void Start() {
         speaker = this.GetComponent<AudioSource>();
         cooldownTimer = cooldown;
+
+        if(winScreenActive) {
+            ws = GameObject.Find("KeyText").GetComponent<WinScreen>();
+        }
     }
 
     void Update()
@@ -57,6 +63,11 @@ public class Echolocate : MonoBehaviour
                 instance.GetComponent<ParticleMover>().SetDirection(transform.forward);
                 cooldownTimer = cooldown;
                 PlaySound(0);
+            }
+
+            if(winScreenActive && ws != null) {
+                ws.changeTime(-5f);
+                Debug.Log("minus 5?");
             }
         }
     }
