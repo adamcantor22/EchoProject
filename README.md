@@ -3,7 +3,7 @@ VR Game project by Adam Cantor and Drew Verenna.
 
 The object of the game is to navigate through a dark maze using Echolocation. In order to go through the exit, the player must first find a key that emits a constant sound which gets louder the closer the player is to the key.
 
-Full build of the game available at [saltyspaghetti.itch.io/EchoGame](saltyspaghetti.itch.io/EchoGame)
+Full build of the game available at [saltyspaghetti.itch.io/EchoGame](https://saltyspaghetti.itch.io/echogame)
 
 While a full build is currently avaiable, to rebuild the game go to: File > Build Settings > Build in the Unity software.
 
