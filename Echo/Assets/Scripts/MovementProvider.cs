@@ -8,6 +8,7 @@ public class MovementProvider : LocomotionProvider
     public float speed = 1.0f;
     public float gravityMultiplier = 1.0f;
 
+    // GameObjects are set as null in the script, are defined in the Unity window
     public List<XRController> controllers = null;
     private CharacterController characterController = null;
     private GameObject head = null;
@@ -18,11 +19,15 @@ public class MovementProvider : LocomotionProvider
         head = GetComponent<XRRig>().cameraGameObject;
     }
 
+    // On start, use position controller to update player position
     private void Start()
     {
         PositionController();
     }
 
+    // Once a frame, use position controller to update player position, then
+    // check for player input. Finally, apply gravity so that the player cannot
+    // unintentionally start floating.
     private void Update()
     {
         PositionController();
@@ -33,22 +38,25 @@ public class MovementProvider : LocomotionProvider
     private void PositionController()
     {
         // Get the head in local, playspace ground
+        // Additionally, clamp head so nobody can see over the maze by standing on a chair
         float headHeight = Mathf.Clamp(head.transform.localPosition.y, 1, 2);
         characterController.height = headHeight;
 
-        // Cut in half, add skin
+        // Cut in half, and make sure to account for characterController "skin"
         Vector3 newCenter = Vector3.zero;
         newCenter.y = characterController.height / 2;
         newCenter.y += characterController.skinWidth;
 
-        // Let's move the capsule in local space as well
+        // Set the new center to the the localPosition of the camera
         newCenter.x = head.transform.localPosition.x;
         newCenter.z = head.transform.localPosition.z;
 
-        // Apply
+        // Apply new center to the character controller
         characterController.center = newCenter;
     }
 
+    // Check each controller in the "controllers" list and see if they are able
+    // to provide input. If so, check for movement on that particular device.
     private void CheckForInput()
     {
         foreach(XRController controller in controllers)
@@ -58,6 +66,8 @@ public class MovementProvider : LocomotionProvider
         }
     }
 
+    // If the primary2DAxis on the controller is a non-default value then have
+    // the player start moving in the direction of that value
     private void CheckForMovement(InputDevice device)
     {
         if (device.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 position))
@@ -78,6 +88,7 @@ public class MovementProvider : LocomotionProvider
         characterController.Move(movement * Time.deltaTime);
     }
 
+    //Move the player down in the y-axis based on gravity to avoid floating
     private void ApplyGravity()
     {
         Vector3 gravity = new Vector3(0, Physics.gravity.y * gravityMultiplier, 0);

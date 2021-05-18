@@ -17,6 +17,9 @@ public class Echolocate : MonoBehaviour
     float cooldownTimer;
     WinScreen ws;
 
+    // Get the audio source that the sounds will play from, initialize the cooldown
+    // timer. Additionally, if the player is in the "win" scene, initialize the
+    // associated script.
     void Start() {
         speaker = this.GetComponent<AudioSource>();
         cooldownTimer = cooldown;
@@ -26,6 +29,9 @@ public class Echolocate : MonoBehaviour
         }
     }
 
+    // Once per frame, decrement the cooldown timer, then check for input
+    // from the VR controllers. Additionally, check if the left mouse button
+    // has been pressed in case the headset being used does not have controllers
     void Update()
     {
         if (cooldownTimer > 0f)
@@ -36,6 +42,8 @@ public class Echolocate : MonoBehaviour
             Ping();
     }
 
+    // Check each controller in the "controllers" list and see if they are able to
+    // provide input. If so, check if the trigger was pressed on that particular device.
     private void CheckForInput()
     {
         foreach (XRController controller in controllers)
@@ -45,6 +53,8 @@ public class Echolocate : MonoBehaviour
         }
     }
 
+    // Check if the trigger on the controller that is being checked is considered
+    // "pressed", if so call Ping() to send out a ping
     private void CheckForPress(InputDevice device)
     {
         bool triggerValue;
@@ -54,9 +64,12 @@ public class Echolocate : MonoBehaviour
 
     void Ping()
     {
-
+        // Check that the ping is not on cooldown
         if (cooldownTimer <= 0f)
         {
+            // For each of the trails that will follow the invisible ping,
+            // instantiate the trail, set the direction to foward, reset the
+            // cooldown timer, and play the "ping" sound
             for (int i = 0; i < trails; i++)
             {
                 GameObject instance = (GameObject)Instantiate(trail, transform.position, Quaternion.Euler(0f, 0f, 0f));
@@ -65,13 +78,15 @@ public class Echolocate : MonoBehaviour
                 PlaySound(0);
             }
 
+            // If the player is in the "win" scene, then have the WinScreen script
+            // decrement the timer for the "win" scene
             if(winScreenActive && ws != null) {
                 ws.changeTime(-5f);
-                Debug.Log("minus 5?");
             }
         }
     }
 
+    // Play the sound at the position that was passed for half a second
     public void PlaySound(int sound) {
         speaker.PlayOneShot(clips[sound], 0.5f);
     }

@@ -10,6 +10,7 @@ public class WinScreen : MonoBehaviour
     float timer = 90f;
     Text t;
 
+    // Initialize the text object
     void Start() {
         t = GetComponent<Text>();
     }
@@ -18,7 +19,9 @@ public class WinScreen : MonoBehaviour
         timer += timeChange;
     }
 
-    // Update is called once per frame
+    // Once per frame, decrement the timer if necessary and make sure the countdown
+    // text is still being displayed. Once the timer is at or below zero, send
+    // the player back to the main scene.
     void Update()
     {
         changeTime(-Time.deltaTime);
